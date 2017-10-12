@@ -1,13 +1,15 @@
+<!-- 포스트 페이지 매기기 (pagination) -->
+<!-- 포스트 목록 아래쪽에 페이지번호하고 이전, 다음 있는거 -->
 <nav class="pagination" role="pagination">
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-            <a class="newer-posts" href="{{ site.baseurl }}" title="Previous Page">&laquo; Newer Posts</a>
+            <a class="newer-posts" href="{{ site.baseurl }}" title="Previous Page">&laquo; 최근 포스트</a>
         {% else %}
-            <a class="newer-posts" href="{{ site.baseurl }}page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
+            <a class="newer-posts" href="{{ site.baseurl }}page{{ paginator.previous_page }}/" title="Previous Page">&laquo; 최근 포스트</a>
       {% endif %}
     {% endif %}
     <span class="page-number"> Page {{ paginator.page }} of {{ paginator.total_pages }} </span>
-    {% if paginator.next_page %} 
-        <a class="older-posts" href="{{ site.baseurl }}page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
-    {% endif %} 
+    {% if paginator.next_page %}
+        <a class="older-posts" href="{{ site.baseurl }}page{{ paginator.next_page }}/" title="Next Page">이전 포스트 &raquo;</a>
+    {% endif %}
 </nav>

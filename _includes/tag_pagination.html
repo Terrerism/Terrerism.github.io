@@ -1,3 +1,4 @@
+<!-- 태그 페이지 매기기 -->
 <nav class="pagination" role="pagination">
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
@@ -7,7 +8,7 @@
       {% endif %}
     {% endif %}
     <span class="page-number"> Page {{ paginator.page }} of {{ paginator.total_pages }} </span>
-    {% if paginator.next_page %} 
+    {% if paginator.next_page %}
         <a class="older-posts" href="{{ site.baseurl }}tag/{{ page.tag }}/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
-    {% endif %} 
+    {% endif %}
 </nav>
