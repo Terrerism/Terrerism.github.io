@@ -1,5 +1,4 @@
-    <!-- 이전/다음 페이지 링크 - 현재페이지 2+ 만 보여줌 -->
-    <!-- 사실 기본이 post_pagination.html 임 -->
+    <!-- Previous/next page links - only displayed on page 2+ -->
     <div class="extra-pagination inner">
         {% if page.class == 'home-template' %}
             {% include post_pagination.html %}
@@ -14,7 +13,7 @@
         {% endif %}
     </div>
 
-    <!-- 포스팅 보여주는 루프 - 각 포스팅은 markup으로 보여줌 -->
+    <!-- This is the post loop - each post will be output using this markup -->
     {% for post in paginator.posts %}
     <article class="post">
         <header class="post-header">
@@ -28,15 +27,14 @@
             <!-- author -->
             <a href='{{ site.baseurl }}author/{{ site.nickname }}'>{{ site.author }}</a>
             <!-- [[tags prefix=" on "]] -->
-            <!-- 포스트의 태그가 여러개일수도 있음 -->
-            {% if post.tags.size > 0 %}
-                on
+            {% if post.tags.size > 0 %} 
+                on 
                 {% for tag in post.tags %}
                     {% if forloop.index == post.tags.size %}
                        <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
                     {% else %}
                        <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
-                    {% endif %}
+                    {% endif %}   
                 {% endfor %}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
