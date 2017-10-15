@@ -2,7 +2,7 @@
 layout: post
 title: "C언어: 난수생성 (rand(), srand(), time())"
 categories:
-  - C 언어
+  - c-langange
 tags:
   - c
   - 난수
