@@ -1,4 +1,7 @@
+<!-- 블로그 왼쪽 칸을 관장하는 페이지 -->
 <div id="sidebar">
+
+  <!-- 블로그 제목과 설명부분 -->
   <header>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
@@ -10,12 +13,18 @@
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
   </header>
+
+  <!-- sidebar-nav-links.html에서 게시판 제목? 카테고리? 리스트를 가져옴 -->
   {% include sidebar-nav-links.html %}
 
+  <!-- 버전 표시하는 부분 -->
   {% if site.version %}
     <span class="site-version">Currently v{{ site.version }}</span>
   {% endif %}
 
+  <!-- 밑에 아이콘 -->
   {% include sidebar-icon-links.html %}
+
+  <!-- 카피라이트 -->
   {% include copyright.html %}
 </div>
