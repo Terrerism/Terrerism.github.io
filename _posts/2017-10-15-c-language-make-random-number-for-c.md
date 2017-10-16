@@ -17,7 +17,7 @@ tags:
 아울러 rand() 함수를 사용하려면 stdlib.h 헤더파일을 코드에 포함시켜야 합니다.
 일단 간단한 사용법을 보여드리겠습니다.
 
-```
+{% highlight c %}
 #include <stdio.h>
 #include <stdlib.h> // rand() 함수가 포함된 헤더파일
 
@@ -33,7 +33,7 @@ int main(void)
 
 	return 0;
 }
-```
+{% endhighlight %}
 
 위 코드의 실행 결과는 다음과 같습니다.
 
