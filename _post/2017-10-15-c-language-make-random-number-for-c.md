@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C언어: 난수생성 (rand(), srand(), time())"
+title: "C 언어: 난수생성 (rand(), srand(), time())"
 categories:
   - C 언어
 tags:
