@@ -1,13 +1,14 @@
 ---
 layout: page
-title: About
+title: 소개
 sidebar_link: true
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
-</p>
+안녕하세요. Terrerism의 블로그 입니다.
+게임, 프로그래밍, 보안, 고양이 주제로 블로그를 운영합니다.
+우선 기존에 운영하던 네이버 블로그를 이곳으로 옮기려고 합니다.
+한동안은 네이버 블로그의 포스팅을 좀 정제하여 옮길 것이고,
+그렇게 하여 어느정도 구색이 갖추어 지면, 새로운 포스팅을 시작할 계횝입니다.
 
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
+기존에 운영하던 블로그는 [이곳](https://blog.naver.com/rnjstjdwo14/)입니다.
+아무쪼록 잘 보고 가셨으면 좋겠습니다.
