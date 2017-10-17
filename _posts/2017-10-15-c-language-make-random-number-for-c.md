@@ -24,15 +24,15 @@ rand() 함수 간단한 사용법 예제입니다.
 
 int main(void)
 {
-	int i = 0;
-	printf("rand() 함수를 사용하여 10개의 난수를 생성\n");
+  int i = 0;
+  printf("rand() 함수를 사용하여 10개의 난수를 생성\n");
 
-	for (i=0 ; i<10 ; i++)
-	{
-		printf("%d\n", rand()); // 난수 생성
-	}
+  for (i=0 ; i<10 ; i++)
+  {
+    printf("%d\n", rand()); // 난수 생성
+  }
 
-	return 0;
+  return 0;
 }
 {% endhighlight %}
 
@@ -72,22 +72,22 @@ srand()에 인자로 들어가는 값을 `시드(seed) 값`이라고 합니다.
 
 int main(void)
 {
-	int i = 0;
-	printf("srand(1) 이후에 rand() 함수를 사용하여 10개의 난수를 생성\n");
-	srand(1); // seed값 1로 설정
-	for (i=0 ; i<10 ; i++)
-	{
-		printf("%d\n", rand()); // 난수 생성
-	}
+  int i = 0;
+  printf("srand(1) 이후에 rand() 함수를 사용하여 10개의 난수를 생성\n");
+  srand(1); // seed값 1로 설정
+  for (i=0 ; i<10 ; i++)
+  {
+    printf("%d\n", rand()); // 난수 생성
+  }
 
-	printf("srand(2) 이후에 rand() 함수를 사용하여 10개의 난수를 생성\n");
-	srand(2); // seed값 2로 설정
-	for (i=0 ; i<10 ; i++)
-	{
-		printf("%d\n", rand()); // 난수 생성
-	}
+  printf("srand(2) 이후에 rand() 함수를 사용하여 10개의 난수를 생성\n");
+  srand(2); // seed값 2로 설정
+  for (i=0 ; i<10 ; i++)
+  {
+    printf("%d\n", rand()); // 난수 생성
+  }
 
-	return 0;
+  return 0;
 }
 {% endhighlight %}
 
